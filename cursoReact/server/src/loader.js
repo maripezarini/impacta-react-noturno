@@ -1,5 +1,5 @@
-const server = require('./config/server')
+const s = require('./config/server')
 require('./config/db')
-const rotas = require('./config/routes')
+require('./config/routes')(s)
 
-rotas(server)
+//programação orientada a objetos: - a calsse é a característica, que vai ter diferentes objetos
