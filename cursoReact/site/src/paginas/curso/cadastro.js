@@ -36,14 +36,18 @@ export class CursoCadastro extends Component {
                     <CursoForm
                         codigo={this.state.codigo}
                         codigoChange={this.codigoChange.bind(this)}
+                        
                         descricao={this.state.descricao}
                         descricaoChange={this.descricaoChange.bind(this)}
+                        
                         cargaHoraria={this.state.cargaHoraria}
-                        cargaHorariaChange={this.cargaHorariaChange.bind(this)} 
+                        cargaHorariaChange={this.cargaHorariaChange.bind(this)}
+                        
                         preco={this.state.preco}
                         precoChange={this.precoChange.bind(this)}
+                        
                         categoria={this.state.categoria}
-                        categoriaChange={this.categoriaChange.bind(this)}/>
+                        categoriaChange={this.categoriaChange.bind(this)} />
                 </div>
                 <div className="col-md-6">
                     <CursoList cursos={this.state.cursos} />
@@ -53,23 +57,27 @@ export class CursoCadastro extends Component {
     }
 
     codigoChange(e) {
-        this.setState({codigo : e.target.value})
+        this.setState({ codigo: e.target.value })
     }
 
     descricaoChange(e) {
-        this.setState({descricao : e.target.value})
+        this.setState({ descricao: e.target.value })
     }
 
     cargaHorariaChange(e) {
-        this.setState({cargaHoraria : e.target.value})
+        this.setState({ cargaHoraria: e.target.value })
     }
 
     precoChange(e) {
-        this.setState({preco : e.target.value})
+        this.setState({ preco: e.target.value })
     }
 
     categoriaChange(e) {
-        this.setState({categoria : e.target.value})
+        this.setState({ categoria: e.target.value })
+    }
+
+    adicionar(){
+          
     }
 }
 
